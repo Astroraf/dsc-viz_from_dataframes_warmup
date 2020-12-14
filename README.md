@@ -140,11 +140,12 @@ Isolate the violent crime column from each of these new dataframes.
 ```python
 # Your code here
 high_unmply_vc = None
-low_unmply_vc
+low_unmply_vc = None
 ```
 
 
 ```python
+#__SOLUTION__
 high_unmply_vc = df_high_unmply['ViolentCrimesPerPop_numeric']
 low_unmply_vc = df_low_unmply['ViolentCrimesPerPop_numeric']
 ```
@@ -153,7 +154,12 @@ Now, plot two histograms on the same axis, one on top of the other.  Set the opa
 
 
 ```python
+# Your code here
+```
 
+
+```python
+#__SOLUTION__
 fix, ax = plt.subplots()
 
 ax.hist(high_unmply_vc, density=True, label='High Unemployment', bins=20)
@@ -164,7 +170,7 @@ plt.legend();
 ```
 
 
-![png](index_files/index_26_0.png)
+![png](index_files/index_27_0.png)
 
 
 # Task 2
@@ -244,5 +250,5 @@ ax[1][1].set_xlabel('Population Demographic %')
 
 
 
-![png](index_files/index_36_1.png)
+![png](index_files/index_37_1.png)
 
