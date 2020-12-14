@@ -98,32 +98,15 @@ Isolate the violent crime column from each of these new dataframes.
 ```python
 # Your code here
 high_unmply_vc = None
-low_unmply_vc
-```
-
-
-```python
-high_unmply_vc = df_high_unmply['ViolentCrimesPerPop_numeric']
-low_unmply_vc = df_low_unmply['ViolentCrimesPerPop_numeric']
+low_unmply_vc = None
 ```
 
 Now, plot two histograms on the same axis, one on top of the other.  Set the opacity (alpha) of the second histogram to .5. Don't forget to include a legend.
 
 
 ```python
-
-fix, ax = plt.subplots()
-
-ax.hist(high_unmply_vc, density=True, label='High Unemployment', bins=20)
-ax.hist(low_unmply_vc, alpha=.5, density=True, label='Low Unemployment', bins=20)
-ax.set_title('Comparison of Distribution of Violent Crime\n in Low and High Unemployment Communities')
-ax.set_xlabel('% Rate of Violent Crime per 100K People')
-plt.legend();
+# Your code here
 ```
-
-
-![png](index_files/index_22_0.png)
-
 
 # Task 2
 
